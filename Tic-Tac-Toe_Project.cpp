@@ -1,10 +1,14 @@
 #include <iostream>
 using namespace std;
 
+//declared global variable to track current player and marker 
 int currentPlayer;
 char currentMarker;
+
+// 3x3 Tic Tac Toe board initialized with positions 1–9
 char board[3][3] = {{'1', '2', '3'}, {'4', '5', '6'}, {'7', '8', '9'}};
 
+// function to display board
 void drawBoard()
 {
     cout << " " << board[0][0] << " | " << board[0][1] << " | " << board[0][2] << endl;
@@ -15,21 +19,24 @@ void drawBoard()
 
     cout << " " << board[2][0] << " | " << board[2][1] << " | " << board[2][2] << endl;
 }
-
+// Function to place marker on the board
 bool placeMarker(int slot)
 {
+        // Convert slot (1–9) to row and column index
     int row = (slot - 1) / 3;
     int col = (slot - 1) % 3;
 
+    // Check if the slot is not already occupied
     if (board[row][col] != 'X' && board[row][col] != 'O')
     {
-        board[row][col] = currentMarker;
+        board[row][col] = currentMarker;  //place marker
         return true;
     }
     else
-        return false;
+        return false;  //slot already occupied
 }
 
+// Function to check if there is a winner
 int winner()
 {
     // rows
@@ -53,6 +60,7 @@ int winner()
         return currentPlayer;
     }
 
+    //anti diagonal
     if (board[0][2] == board[1][1] && board[1][1] == board[2][0])
     {
         return currentPlayer;
@@ -61,8 +69,10 @@ int winner()
     return 0;
 }
 
+//function to switch player and marker after each turn 
 void swapPlayerAndMarker()
 {
+    //switch marker
     if (currentMarker == 'X')
     {
         currentMarker = 'O';
@@ -71,6 +81,8 @@ void swapPlayerAndMarker()
     {
         currentMarker = 'X';
     }
+
+    //player switch 
     if (currentPlayer == 1)
     {
         currentPlayer = 2;
@@ -81,6 +93,7 @@ void swapPlayerAndMarker()
     }
 }
 
+//main game function
 void game()
 {
     cout << "----------------WELCOME---------------- \n";
@@ -97,26 +110,31 @@ void game()
     drawBoard();
 
     int PlayerWon;
+
+    //max 9 possible
     for (int i = 0; i < 9; i++)
     {
         cout << "ITS PLAYER" << currentPlayer << "'s TURN ENTER YOUR SLOT:" << endl;
         int slot;
         cin >> slot;
 
+        //validate slot range
         if (slot < 1 || slot > 9)
         {
             cout << "it is not a valid slot";
-            i--;
+            i--; //retry
             continue;
         }
 
         if (!placeMarker(slot))
         {
             cout << "slot is occupied! try again:" << endl;
-            i--;
+            i--;  //retry
             continue;
         }
+        //update board
         drawBoard();
+           // Check if current player won
         PlayerWon = winner();
 
         if (PlayerWon == 1)
@@ -132,7 +150,7 @@ void game()
 
         swapPlayerAndMarker();
     }
-
+     // If no winner after all moves → tie
     if (PlayerWon == 0)
     {
         cout << "Its a tie!";
