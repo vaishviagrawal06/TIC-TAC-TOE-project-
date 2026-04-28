@@ -35,37 +35,83 @@ The computer follows a **priority-based algorithm**:
 5. Take any empty spot 📍
 ```
 ---
-
 ## 🎮 Game Preview
 1 | 2 | 3
---|---|---
+---------
 4 | 5 | 6
---|---|---
+---------
 7 | 8 | 9
-
 ---
+## 🚀 Features
 
+✔ Player vs Computer mode
+✔ Smart move selection
+✔ Choose who starts first
+✔ Input validation
+✔ Real-time board updates
+✔ Win / Draw detection
+---
+## 🛠️ Tech Stack
+
+| Category | Details |
+|---------|--------|
+| Language | C++ |
+| Type | Console Application |
+| Concepts | Arrays, Functions, Logic Building |
+---
+## 📂 Project Structure
+ 📁 Tic-Tac-Toe
+ ┣ 📜 main.cpp
+ ┗ 📜 README.md
+ ---
 ## ▶️ Getting Started
-
-### 🔧 Compile
-```
+🔧 Compile
 g++ main.cpp -o tic
-```
 ---
 ## ▶️ Run
-```
 ./tic
-```
----
 ## 🎯 How to Play
-1.Select your marker (X / O)
-2.Choose who starts:
-(i) Player 👤
-(ii) Computer 🤖
-3.Enter position (1–9)
-4.Try to beat the AI 😎
-
+Select your marker (X / O)
+Choose who starts:
+Player 👤
+Computer 🤖
+Enter position (1–9)
+Try to beat the AI 😎
 ---
+## 🔍 Core Functions
 
+| Function | Description |
+|----------|------------|
+| drawBoard() | Prints the board |
+| placeMarker() | Places move |
+| winner() | Checks winner |
+| swapPlayerAndMarker() | Switch turn |
+| isWinningMove() | Simulates winning |
+| computerMove() | AI logic |
+| game() | Main controller |
+---
+## 📈 Future Improvements
+
+✨ Add Minimax AI (Unbeatable mode)
+✨ GUI version (SFML / Qt)
+✨ Multiplayer mode
+✨ Score tracking
+✨ Sound effects
+---
+## 🤝 Contributing
+
+Contributions are welcome!
+
+Fork the repo
+Create a new branch
+Make changes
+Submit PR
+---
+## 📜 License
+
+Licensed under the MIT License
+---
 ## 👨‍💻 Author
+
 Vaishvi Agrawal
+📌 C++ Developer | Problem Solver tum pura ek markdown ke andar likh kar do ab 
