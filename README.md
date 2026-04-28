@@ -1,134 +1,90 @@
-# 🎮 Tic Tac Toe Game in C++
+🎮 Tic-Tac-Toe (Player vs Computer) – C++
+<p align="center"> <img src="https://img.shields.io/badge/Language-C++-blue?style=for-the-badge&logo=c%2B%2B"> <img src="https://img.shields.io/badge/Type-Console%20Game-green?style=for-the-badge"> <img src="https://img.shields.io/badge/Level-Beginner%20Friendly-orange?style=for-the-badge"> <img src="https://img.shields.io/badge/AI-Basic%20Logic-purple?style=for-the-badge"> <img src="https://img.shields.io/badge/License-MIT-red?style=for-the-badge"> </p>
+✨ Overview
 
-✨ A simple yet fun **command-line Tic Tac Toe game** built using C++.
-This project demonstrates core programming concepts like arrays, loops, functions, and game logic.
+A classic Tic-Tac-Toe game built in C++, where you play against a computer 🤖 that makes smart decisions.
 
----
+This project demonstrates:
 
-## 🚀 Features
+Clean C++ structure
+Game logic design
+Basic AI implementation
+🧠 AI Strategy (How Computer Thinks)
 
-✅ Two-player interactive gameplay
-✅ Clean 3×3 board interface
-✅ Player chooses marker (**X** or **O**)
-✅ Automatic win detection (rows, columns, diagonals)
-✅ Tie detection when board is full
-✅ Input validation for slots (1–9)
+The computer follows a priority-based algorithm:
 
----
+1. Win if possible 🏆
+2. Block the player 🚫
+3. Take center (5) 🎯
+4. Take corners (1,3,7,9) 🔲
+5. Take any empty spot 📍
+🎮 Game Preview
+1 | 2 | 3
+---------
+4 | 5 | 6
+---------
+7 | 8 | 9
+🚀 Features
 
-## 🧠 Concepts Used
+✔ Player vs Computer mode
+✔ Smart move selection
+✔ Choose who starts first
+✔ Input validation
+✔ Real-time board updates
+✔ Win / Draw detection
 
-This project helps in understanding:
+🛠️ Tech Stack
+Category	Details
+Language	C++
+Type	Console Application
+Concepts	Arrays, Functions, Logic Building
+📂 Project Structure
+📁 Tic-Tac-Toe
+ ┣ 📜 main.cpp
+ ┗ 📜 README.md
+▶️ Getting Started
+🔧 Compile
+g++ main.cpp -o tic
+▶️ Run
+./tic
+🎯 How to Play
+Select your marker (X / O)
+Choose who starts:
+Player 👤
+Computer 🤖
+Enter position (1–9)
+Try to beat the AI 😎
+🔍 Core Functions
+Function	Description
+drawBoard()	Prints the board
+placeMarker()	Places move
+winner()	Checks winner
+swapPlayerAndMarker()	Switch turn
+isWinningMove()	Simulates winning
+computerMove()	AI logic
+game()	Main controller
+📈 Future Improvements
 
-* 🔹 2D Arrays (Game Board)
-* 🔹 Functions (Modular Programming)
-* 🔹 Loops & Conditions
-* 🔹 User Input Handling
-* 🔹 Game Logic Design
+✨ Add Minimax AI (Unbeatable mode)
+✨ GUI version (SFML / Qt)
+✨ Multiplayer mode
+✨ Score tracking
+✨ Sound effects
 
----
+🤝 Contributing
 
-## 🎯 How to Play
+Contributions are welcome!
 
-1️⃣ Run the program
-2️⃣ Player 1 selects a marker (`X` or `O`)
-3️⃣ Players take turns choosing positions (1–9)
+1. Fork the repo
+2. Create a new branch
+3. Make changes
+4. Submit PR
+📜 License
 
-### 🗺️ Board Layout
+Licensed under the MIT License
 
-```id="layout123"
- 1 | 2 | 3
----|---|---
- 4 | 5 | 6
----|---|---
- 7 | 8 | 9
-```
+👨‍💻 Author
 
-4️⃣ First player to align **3 symbols** wins 🏆
-5️⃣ If all positions are filled without a winner → It's a tie 🤝
+Vaishvi Agrawal
 
----
-
-## ⚙️ Installation & Execution
-
-### 🔧 Compile
-
-```bash id="compile123"
-g++ tic_tac_toe.cpp -o game
-```
-
-### ▶️ Run
-
-```bash id="run123"
-./game
-```
-
----
-
-## 📸 Sample Gameplay
-
-```id="sample123"
-----------------WELCOME----------------
---------TIC - TAC - TOE GAME-----------
-
-Player1 choose your marker : X OR O -> X
-
- 1 | 2 | 3
----|---|---
- 4 | 5 | 6
----|---|---
- 7 | 8 | 9
-
-ITS PLAYER 1's TURN ENTER YOUR SLOT:
-```
-
----
-
-## 🔮 Future Enhancements
-
-🚀 Add single-player mode (AI 🤖)
-🎨 Improve UI (colors / better formatting)
-🔁 Add replay option
-🖥️ Convert to GUI (using graphics libraries)
-🌐 Multiplayer over network (advanced)
-
----
-
-## 📂 Project Structure
-
-```id="struct123"
-tic-tac-toe/
-│── tic_tac_toe.cpp
-│── README.md
-```
-
----
-
-## 💡 What I Learned
-
-* How to design a complete game from scratch
-* Handling real-time user input
-* Writing clean and modular C++ code
-* Debugging logical errors
-
----
-
-## 👨‍💻 Author
-
-**Vaishvi Agrawal**
-
----
-
-## ⭐ Support
-
-If you liked this project:
-👉 Give it a ⭐ on GitHub
-👉 Share it with friends
-👉 Improve it and make it better!
-
----
-
-## 📜 License
-
-This project is open-source and free to use for learning purposes.
-
+<p align="center"> ⭐ If you like this project, don't forget to star the repo! </p>
