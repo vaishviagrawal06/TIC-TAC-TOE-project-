@@ -34,16 +34,38 @@ The computer follows a **priority-based algorithm**:
 4. Take corners (1, 3, 7, 9) 🔲
 5. Take any empty spot 📍
 ```
-🎮 Game PreviewPlaintext
- 1 | 2 | 3
------------
- 4 | 5 | 6
------------
- 7 | 8 | 9
-🚀 Features✔️ Player vs Computer mode✔️ Smart move selection✔️ Choose who starts first✔️ Input validation✔️ Real-time board updates✔️ Win / Draw detection🛠️ Tech StackCategoryDetailsLanguageC++TypeConsole ApplicationConceptsArrays, Functions, Logic Building📂 Project StructurePlaintext📁 Tic-Tac-Toe
- ┣ 📜 main.cpp
- ┗ 📜 README.md
-▶️ Getting Started🔧 CompileBashg++ main.cpp -o tic
-▶️ RunOn Linux / macOS:Bash./tic
-On Windows:DOStic.exe
-🎯 How to PlaySelect your marker (X or O).Choose who starts:Player 👤Computer 🤖Enter position (1–9).Try to beat the AI! 😎🔍 Core FunctionsFunctionDescriptiondrawBoard()Prints the boardplaceMarker()Places movewinner()Checks winnerswapPlayerAndMarker()Switch turnisWinningMove()Simulates winningcomputerMove()AI logicgame()Main controller📈 Future Improvements[ ] ✨ Add Minimax AI (Unbeatable mode)[ ] ✨ GUI version (SFML / Qt)[ ] ✨ Multiplayer mode[ ] ✨ Score tracking[ ] ✨ Sound effects🤝 ContributingContributions are welcome!Fork the repoCreate a new branchMake changesSubmit PR📜 LicenseLicensed under the MIT License👨‍💻 AuthorVaishvi Agrawal📌 C++ Developer | Problem Solver
+---
+
+## 🎮 Game Preview
+1 | 2 | 3
+--|---|---
+4 | 5 | 6
+--|---|---
+7 | 8 | 9
+
+---
+
+## ▶️ Getting Started
+
+### 🔧 Compile
+```
+g++ main.cpp -o tic
+```
+---
+## ▶️ Run
+```
+./tic
+```
+---
+## 🎯 How to Play
+1.Select your marker (X / O)
+2.Choose who starts:
+(i) Player 👤
+(ii) Computer 🤖
+3.Enter position (1–9)
+4.Try to beat the AI 😎
+
+---
+
+## 👨‍💻 Author
+Vaishvi Agrawal
