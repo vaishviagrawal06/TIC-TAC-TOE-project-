@@ -115,7 +115,7 @@ tic-tac-toe/
 
 ## 👨‍💻 Author
 
-**Sunil Agrawal**
+**Vaishvi Agrawal**
 
 ---
 
