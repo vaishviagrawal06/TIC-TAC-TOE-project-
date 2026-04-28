@@ -177,8 +177,25 @@ void game()
         computerMarker = 'X';
     }
 
-    currentPlayer = 1;
-    currentMarker = playerMarker;
+    // currentPlayer = 1;
+    // currentMarker = playerMarker;
+
+    int choice;
+    cout<<"do you want to start the game: "<<endl;
+    cout<<"1.Player"<<endl;
+    cout<<"2.Computer"<<endl;
+    cout<<"Enter choice"<<endl;
+    cin>>choice;
+
+    if (choice ==1)
+    {
+        currentPlayer=1;   //player starts
+        currentMarker=playerMarker;
+    }
+    else{
+        currentPlayer=2;   //computer starts
+        currentMarker=computerMarker;
+    }
 
     drawBoard();
 
