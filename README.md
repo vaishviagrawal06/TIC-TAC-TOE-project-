@@ -34,84 +34,16 @@ The computer follows a **priority-based algorithm**:
 4. Take corners (1, 3, 7, 9) 🔲
 5. Take any empty spot 📍
 ```
----
-## 🎮 Game Preview
-1 | 2 | 3
----------
-4 | 5 | 6
----------
-7 | 8 | 9
----
-## 🚀 Features
-
-✔ Player vs Computer mode
-✔ Smart move selection
-✔ Choose who starts first
-✔ Input validation
-✔ Real-time board updates
-✔ Win / Draw detection
----
-## 🛠️ Tech Stack
-
-| Category | Details |
-|---------|--------|
-| Language | C++ |
-| Type | Console Application |
-| Concepts | Arrays, Functions, Logic Building |
----
-## 📂 Project Structure
- 📁 Tic-Tac-Toe
+🎮 Game PreviewPlaintext
+ 1 | 2 | 3
+-----------
+ 4 | 5 | 6
+-----------
+ 7 | 8 | 9
+🚀 Features✔️ Player vs Computer mode✔️ Smart move selection✔️ Choose who starts first✔️ Input validation✔️ Real-time board updates✔️ Win / Draw detection🛠️ Tech StackCategoryDetailsLanguageC++TypeConsole ApplicationConceptsArrays, Functions, Logic Building📂 Project StructurePlaintext📁 Tic-Tac-Toe
  ┣ 📜 main.cpp
  ┗ 📜 README.md
- ---
-## ▶️ Getting Started
-🔧 Compile
-g++ main.cpp -o tic
----
-## ▶️ Run
-./tic
-## 🎯 How to Play
-Select your marker (X / O)
-Choose who starts:
-Player 👤
-Computer 🤖
-Enter position (1–9)
-Try to beat the AI 😎
----
-## 🔍 Core Functions
-
-| Function | Description |
-|----------|------------|
-| drawBoard() | Prints the board |
-| placeMarker() | Places move |
-| winner() | Checks winner |
-| swapPlayerAndMarker() | Switch turn |
-| isWinningMove() | Simulates winning |
-| computerMove() | AI logic |
-| game() | Main controller |
----
-## 📈 Future Improvements
-
-✨ Add Minimax AI (Unbeatable mode)
-✨ GUI version (SFML / Qt)
-✨ Multiplayer mode
-✨ Score tracking
-✨ Sound effects
----
-## 🤝 Contributing
-
-Contributions are welcome!
-
-Fork the repo
-Create a new branch
-Make changes
-Submit PR
----
-## 📜 License
-
-Licensed under the MIT License
----
-## 👨‍💻 Author
-
-Vaishvi Agrawal
-📌 C++ Developer | Problem Solver
+▶️ Getting Started🔧 CompileBashg++ main.cpp -o tic
+▶️ RunOn Linux / macOS:Bash./tic
+On Windows:DOStic.exe
+🎯 How to PlaySelect your marker (X or O).Choose who starts:Player 👤Computer 🤖Enter position (1–9).Try to beat the AI! 😎🔍 Core FunctionsFunctionDescriptiondrawBoard()Prints the boardplaceMarker()Places movewinner()Checks winnerswapPlayerAndMarker()Switch turnisWinningMove()Simulates winningcomputerMove()AI logicgame()Main controller📈 Future Improvements[ ] ✨ Add Minimax AI (Unbeatable mode)[ ] ✨ GUI version (SFML / Qt)[ ] ✨ Multiplayer mode[ ] ✨ Score tracking[ ] ✨ Sound effects🤝 ContributingContributions are welcome!Fork the repoCreate a new branchMake changesSubmit PR📜 LicenseLicensed under the MIT License👨‍💻 AuthorVaishvi Agrawal📌 C++ Developer | Problem Solver
