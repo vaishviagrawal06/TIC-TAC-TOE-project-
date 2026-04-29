@@ -55,9 +55,14 @@ Choose X or O: X
 2.Computer
 Enter choice: 1
 Enter a number **(1–9)** to place your marker on the board:
-1 | 2 | 3
-4 | 5 | 6
-7 | 8 | 9
+
+```
+ 1 | 2 | 3
+---|---|---
+ 4 | 5 | 6
+---|---|---
+ 7 | 8 | 9
+```
 
 🏆 Get **3 in a row** — horizontally, vertically, or diagonally — to win!
 
