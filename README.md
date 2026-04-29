@@ -1,117 +1,78 @@
-# 🎮 Tic-Tac-Toe (Player vs Computer) – C++
+# Tic-Tac-Toe (Player vs Computer) 🎮
 
-> A smart console-based Tic-Tac-Toe game with basic AI logic 🤖
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Language-C++-blue?style=for-the-badge&logo=c%2B%2B" alt="C++">
-  <img src="https://img.shields.io/badge/Type-Console%20Game-green?style=for-the-badge" alt="Console Game">
-  <img src="https://img.shields.io/badge/Level-Beginner%20Friendly-orange?style=for-the-badge" alt="Beginner Friendly">
-  <img src="https://img.shields.io/badge/AI-Basic%20Logic-purple?style=for-the-badge" alt="AI Basic Logic">
-  <img src="https://img.shields.io/badge/License-MIT-red?style=for-the-badge" alt="MIT License">
-</p>
+A console-based Tic-Tac-Toe game written in C++ where you play against a smart computer opponent.
 
 ---
 
-## ✨ Overview
+## Features
 
-A **classic Tic-Tac-Toe game** built in **C++**, where you play against a computer 🤖 that makes smart decisions.
-
-### This project demonstrates:
-- Clean C++ structure  
-- Game logic design  
-- Basic AI implementation  
+- Player vs Computer gameplay
+- Choose your marker — X or O
+- Choose who goes first — Player or Computer
+- Smart computer AI that:
+  - Wins when it can
+  - Blocks the player from winning
+  - Prefers center and corner positions
+- Input validation for invalid or already-taken moves
+- Clean board display after every move
 
 ---
 
-## 🧠 AI Strategy (How Computer Thinks)
+## How to Run
 
-The computer follows a **priority-based algorithm**:
+### Prerequisites
+- A C++ compiler (g++, clang++, MSVC, etc.)
 
-```text
-1. Win if possible 🏆
-2. Block the player 🚫
-3. Take center (5) 🎯
-4. Take corners (1, 3, 7, 9) 🔲
-5. Take any empty spot 📍
+### Steps
+
+```bash
+g++ tictactoe.cpp -o tictactoe
+./tictactoe
 ```
----
-## 🎮 Game Preview
-1 | 2 | 3
----------
-4 | 5 | 6
----------
-7 | 8 | 9
----
-## 🚀 Features
 
-✔ Player vs Computer mode
-✔ Smart move selection
-✔ Choose who starts first
-✔ Input validation
-✔ Real-time board updates
-✔ Win / Draw detection
 ---
-## 🛠️ Tech Stack
 
-| Category | Details |
-|---------|--------|
-| Language | C++ |
-| Type | Console Application |
-| Concepts | Arrays, Functions, Logic Building |
----
-## 📂 Project Structure
- 📁 Tic-Tac-Toe
- ┣ 📜 main.cpp
- ┗ 📜 README.md
- ---
-## ▶️ Getting Started
-🔧 Compile
-g++ main.cpp -o tic
----
-## ▶️ Run
-./tic
-## 🎯 How to Play
-Select your marker (X / O)
-Choose who starts:
-Player 👤
-Computer 🤖
-Enter position (1–9)
-Try to beat the AI 😎
----
-## 🔍 Core Functions
+## How to Play
 
-| Function | Description |
-|----------|------------|
-| drawBoard() | Prints the board |
-| placeMarker() | Places move |
-| winner() | Checks winner |
-| swapPlayerAndMarker() | Switch turn |
-| isWinningMove() | Simulates winning |
-| computerMove() | AI logic |
-| game() | Main controller |
+1. Run the program
+2. Choose your marker: **X** or **O**
+3. Choose who starts first: **Player** or **Computer**
+4. Enter a slot number (1–9) to place your marker
+   1 | 2 | 3
+   4 | 5 | 6
+   7 | 8 | 9
+5. The game ends when someone wins or all 9 slots are filled (draw)
+
 ---
-## 📈 Future Improvements
 
-✨ Add Minimax AI (Unbeatable mode)
-✨ GUI version (SFML / Qt)
-✨ Multiplayer mode
-✨ Score tracking
-✨ Sound effects
+## Computer AI Logic
+
+The computer follows this priority order:
+
+1. **Win** — Take a winning move if available
+2. **Block** — Prevent the player from winning
+3. **Center** — Take slot 5 if free
+4. **Corners** — Take a corner (1, 3, 7, 9) if available
+5. **Any** — Take any remaining free slot
+
 ---
-## 🤝 Contributing
 
-Contributions are welcome!
+## Project Structure
+tictactoe.cpp   → Single-file implementation
 
-Fork the repo
-Create a new branch
-Make changes
-Submit PR
 ---
-## 📜 License
 
-Licensed under the MIT License
+## Example Output
+---TIC-TAC-TOE---
+Player VS Computer
+Choose X or O: X
+do you want to start the game:
+1.Player
+2.Computer
+Enter choice: 1
 ---
-## 👨‍💻 Author
 
-Vaishvi Agrawal
-📌 C++ Developer | Problem Solver tum pura ek markdown ke andar likh kar do ab 
+## Author
+Vaishvi A grawal
+
+Made with ❤️ in C++
